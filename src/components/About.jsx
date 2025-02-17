@@ -72,7 +72,7 @@ function About() {
               Jujutsu Kaisen 0 movie was released on December 24, 2021, serving
               as a prequel to the main story and focusing on Yuta Okkotsu. The
               film was a massive hit, further cementing the series&#39;
-              popularity worldwide.
+              popularity throughout worldwide and universe.
             </p>
           </div>
         </div>
