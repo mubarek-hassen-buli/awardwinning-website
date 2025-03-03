@@ -7,10 +7,10 @@ import {
 } from "framer-motion";
 
 const IMGS = [
-  "public/img/● ⌇ Satoru Gojo.jpg",
+  "public/img/purple_glow.jpg",
   "public/img/Gojo Satoru.jpg",
   "public/img/gojo.jpg",
-  "public/img/Satoru Gojo 🐐.jpg",
+  "public/img/Satoru_Gojo.jpg",
   "public/img/sukuna jujutsu kaisen.jpg",
   "public/img/Toji Fushiguro.jpg",
   "public/img/Yuta Okkotsu wallpaper.jpg",
