@@ -26,10 +26,10 @@ function About() {
     });
   });
   return (
-    <div id="about" className="min-h-screen w-screen ">
+    <div id="about" className="min-h-screen w-screen bg-black text-gray-700 pt-24">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-4">
         <SplitText
-          text=" welcome to in a world of sorcery"
+          text=" Welcome to a world of sorcery, where spells shape reality and the arcane arts hold limitless potential!"
           className="font-general text-sm uppercase md:text-[20px]"
           delay={80}
           animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
@@ -38,12 +38,10 @@ function About() {
           threshold={0.2}
           rootMargin="-50px"
         />
-        {/* <h2 className="font-general text-sm uppercase md:text-[20px]">
-         
-        </h2> */}
+
         <AnimatedTitle
           title=" History of Jujutsu-Kaisen"
-          containerClass="mt-5 !text-black text-center"
+          containerClass="mt-5 !text-gray-700 text-center"
         />
       </div>
       <div className=" flex-row space-x-6 justify-between px-9 md:flex md:space-x-8 md:space-y-2 ">

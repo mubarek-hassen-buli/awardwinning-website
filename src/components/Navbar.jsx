@@ -3,10 +3,10 @@ import gsap from "gsap";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
-
+import { Link } from "react-scroll";
 import Button from "./Button";
 
-const navItems = ["Nexus", "Vault", "Prologue", "About", "Contact"];
+const navItems = ["Home", "Casts", "Moments", "About", "Contact"];
 
 const NavBar = () => {
   // State for toggling audio and visual indicator
@@ -75,7 +75,7 @@ const NavBar = () => {
 
             <Button
               id="product-button"
-              title="Products"
+              title="Jujutsu Kaisen"
               rightIcon={<TiLocationArrow />}
               containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
             />
@@ -85,18 +85,19 @@ const NavBar = () => {
           <div className="flex h-full items-center">
             <div className="hidden md:block">
               {navItems.map((item, index) => (
-                <a
-                  key={index}
-                  href={`#${item.toLowerCase()}`}
-                  className="nav-hover-btn"
-                >
-                  {item}
-                </a>
+                  // <a
+                  //   key={index}
+                  //   href={`#${item.toLowerCase()}`}
+                  //   className="nav-hover-btn"
+                  // >
+                  //   {item}
+                  // </a>
+                 <Link to={item.toLowerCase()} smooth={true} duration={600} key={index} className="nav-hover-btn"> {item}</Link>
               ))}
             </div>
 
             <button
-              onClick={toggleAudioIndicator}
+                onClick={toggleAudioIndicator}
               className="ml-10 flex items-center space-x-0.5"
             >
               <audio

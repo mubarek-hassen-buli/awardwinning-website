@@ -1,78 +1,70 @@
 // import { BentoGrid, BentoGridItem } from '../ui/bento-grid'
 import { BentoGrid, BentoGridItem } from './ui/bento-grid'
-import {
-    IconArrowWaveRightUp,
-    IconBoxAlignRightFilled,
-    IconBoxAlignTopLeft,
-    IconClipboardCopy,
-    IconFileBroken,
-    IconSignature,
-    IconTableColumn,
-} from '@tabler/icons-react'
+
 
 export function BentoGridDemo() {
     // max-w-4xl
     return (
-        <BentoGrid className="max-w-4xl mx-auto ">
-            {items.map((item, i) => (
-                <BentoGridItem
-                    key={i}
-                    title={item.title}
-                    description={item.description}
-                    header={item.header}
-                    icon={item.icon}
-                    className={i === 3 || i === 6 ? 'md:col-span-2' : ''}
-                />
-            ))}
-        </BentoGrid>
+        <div id="casts"   className="bg-black text-white pt-12">
+            <div>
+                <h1 className="text-4xl font-bold my-9 text-center"> The Main Casts Of The Show </h1>
+            </div>
+            <BentoGrid className="max-w-4xl mx-auto ">
+                {items.map((item, i) => (
+                    <BentoGridItem
+                        key={i}
+                        image={item.image}
+                        title={item.title}
+                        className={i === 3 || i === 6 ? 'md:col-span-2' : ''}
+                    />
+                ))}
+            </BentoGrid>
+        </div>
     )
 }
-const Skeleton = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100"></div>
-)
+
+
 const items = [
     {
-        title: 'The Dawn of Innovation',
-        description:
-            'Explore the birth of groundbreaking ideas and inventions.',
-        header: <Skeleton />,
-        icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+        image: '/img/yuta.img.jpg',
+        title: 'Yuta Okkotsu',
+
+
     },
     {
-        title: 'The Digital Revolution',
-        description: 'Dive into the transformative power of technology.',
-        header: <Skeleton />,
-        icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+        image: '/img/yuji.img.jpg',
+        title: 'Yuji Itadori',
+
+
     },
     {
-        title: 'The Art of Design',
-        description: 'Discover the beauty of thoughtful and functional design.',
-        header: <Skeleton />,
-        icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+        image: '/img/guru.img.jpg',
+        title: 'Suguru Geto ',
+
+
     },
     {
-        title: 'The Power of Communication',
-        description:
-            'Understand the impact of effective communication in our lives.',
-        header: <Skeleton />,
-        icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+        image:'/img/gojo.img.jpg',
+        title: 'Gojo Satoru (The main character)',
+
+
     },
     {
-        title: 'The Pursuit of Knowledge',
-        description: 'Join the quest for understanding and enlightenment.',
-        header: <Skeleton />,
-        icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500" />,
+        image:'/img/Maki.img.jpg',
+        title: 'Maki Zenin',
+
+
     },
     {
-        title: 'The Joy of Creation',
-        description: 'Experience the thrill of bringing ideas to life.',
-        header: <Skeleton />,
-        icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500" />,
+        image:'/img/Megumi.img.jpg',
+        title: 'Megumi Fushiguro',
+
+
     },
     {
-        title: 'The Spirit of Adventure',
-        description: 'Embark on exciting journeys and thrilling discoveries.',
-        header: <Skeleton />,
-        icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+        image:'/img/sukuna.img.jpg',
+        title: 'Ryomen Sukuna (The main villain)',
+
+
     },
 ]

@@ -70,10 +70,11 @@ function Hero() {
     });
   });
   const getvideoSrc = (index) => {
-    return `videos/hero-${index}.mp4`;
+    return `videos/hero-${index}.mvv`;
   };
   return (
-    <div className="relative h-dvh w-screen overflow-x-hidden">
+    <div id="home" className="relative h-dvh w-screen overflow-x-hidden">
+
       {isloading && (
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
           <div className="three-body">
@@ -97,7 +98,7 @@ function Hero() {
                 src={getvideoSrc(upcomingVideoindex)}
                 ref={nextVideoRef}
                 loop
-                muted
+
                 id="current-video"
                 className="size-64 origin-center scale-150 object-cover object-center"
                 onLoadedData={handleVideoload}
@@ -125,16 +126,16 @@ function Hero() {
             onLoadedData={handleVideoload}
           ></video>
         </div>
-        <h1 className=" special-font hero-heading  absolute bottom-5 right-5 z-40  text-blue-75 ">
+        <h1 className=" special-font hero-heading  absolute bottom-5 right-5 z-40  text-black ">
           K <b>a</b>isen
         </h1>
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
-            <h1 className="special-font  hero-heading text-blue-100 ">
+            <h1 className="special-font  hero-heading text-black ">
               ju<b>j</b>u<b>t</b>su
             </h1>
             <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Enter the metagame layer <br /> Unleash the Play Economy
+              Enter the World of anime <br /> Unleash Your Imaginations
             </p>
             <Button
               id="watch-trailer"
@@ -145,7 +146,7 @@ function Hero() {
           </div>
         </div>
       </div>
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black ">
+      <h1 className="special-font hero-heading absolute bottom-5 right-5 text-white ">
         K <b>a</b>isen
       </h1>
     </div>
